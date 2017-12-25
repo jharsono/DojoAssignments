@@ -1,0 +1,254 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+h1 {
+  color: black;
+}
+
+p {
+  font-size: 12px;
+}
+div {
+  display: inline-block;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+
+}
+#outer_wrapper {
+  display: block;
+  background-color: #002233;
+  width: 900px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#header {
+  display: inline-block;
+}
+
+#company_name {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-right: 90px;
+  margin-top: 20px;
+  margin-left: 20px
+}
+
+.consulting {
+  color: #0097dd;
+}
+
+#top_nav {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+}
+
+#top_nav li {
+  display: inline-block;
+  margin: 22px;
+
+}
+.top_nav_current {
+  color: #206385;
+}
+
+#inner_wrapper {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width:840px;
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+}
+
+#banner {
+  margin: auto;
+}
+
+#middle_section {
+  display: flex;
+  width: 845px;
+  margin-top:13px;
+}
+
+#services {
+  background-color: #006aa4;
+  height: 200px;
+}
+
+#projects {
+  background-color: #006aa4;
+  height: 200px;
+}
+
+#clients {
+  background-color: #006aa4;
+  height: 200px;
+
+}
+
+.icon {
+  width: 40px;
+  margin: 10px;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 90%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: inherit;
+}
+
+.title_text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px
+}
+
+.desc {
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.more_info {
+  background: linear-gradient(#40b7ea, #40b7ea 49.9%, #0096da 50.1%, #0096da 100%);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  margin-top: 10px
+}
+
+#lower_third {
+  display: block;
+}
+
+#lower_third_title_bar {
+  display: inline-block;
+
+}
+
+.lower_third_text {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#bottom_spacer {
+  width: 260px;
+}
+
+#lower_third_columns {
+  display: flex;
+  align-items: flex-start;
+  width: 900px;
+}
+
+
+#company_description {
+  width: 250px;
+  margin: 20px;
+}
+
+#company_description P {
+  padding-bottom: 5px;
+  font-size: 10px
+}
+#testimonial {
+  width: 300px;
+  flex-direction: column;
+}
+
+#testimonial_text {
+  background-color: #d7eefe;
+  padding: 20px;
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-style: italic;
+
+}
+#triangle {
+  width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 14px solid #d7eefe;
+  margin-left: 35px;
+  padding-top: 15px
+}
+
+#building {
+  width: 265px;
+  margin-top: 20px;
+}
+
+.quote {
+  font-size: 10px;
+  margin-left: 10px;
+  display: block;
+}
+
+#learn_more {
+  color: #0096da;
+  font-size: 14px;
+  margin-top: 20px;
+  background: none;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px
+}
+
+#footer {
+  display: inline-block;
+  background-color: #d7eefe;
+  width: 880px;
+  margin: 0 10px;
+  text-align: center;
+  margin-top: -8px;
+}
+
+
+
+#footer li {
+  display: inline-block;
+  color: #206385;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer_current_page {
+  color: #95ccec
+}

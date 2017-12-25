@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type ="text/javascript" src= 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert('it works');
+
+        $('#hide').click(function(){
+          $('#hide_description').hide();
+        })
+
+        $('#show').click(function(){
+          $('#hide_description').show();
+        })
+
+        $('#toggle').click(function(){
+          $('#toggle_description').toggle();
+        })
+
+        $('#slide_down').click(function(){
+          $('#slidedown_description').slideDown();
+        })
+
+        $('#slide_up').click(function(){
+          $('#slidedown_description').slideUp();
+        })
+
+        $('#slide_toggle').click(function(){
+          $('#slidetoggle_description').slideToggle();
+        })
+
+        $('#fade_in').click(function(){
+          $('#fade_description').fadeIn();
+        })
+
+        $('#fade_out').click(function(){
+          $('#fade_description').fadeOut();
+        })
+
+        $('#add_class').click(function(){
+          $('#addclass_description').addClass("green");
+        })
+
+        $('#remove_class').click(function(){
+          $('#addclass_description').removeClass("green");
+        })
+
+        $('#before').click(function(){
+          $('#before_description').before("Please");
+        })
+        $('#after').click(function(){
+          $('#after_description').after("!!!!");
+        })
+
+        $('#html').click(function(){
+          $('#html_description').html('<span class="green">I changed the words and the color!</span>');
+        })
+
+        $('#append_hello').click(function(){
+          $('#append_description').append('<span class="green">Hello</span>');
+        })
+
+        $('#append_goodbye').click(function(){
+          $('#append_description').append('<span class="green">Goodbye</span>');
+        })
+        //
+        $('#attr').click(function(){
+          $(this).attr('css', { color: "red"});
+        })
+
+
+        $("#val").click(function(){
+            $('input:text').val(function(n, c){
+                return "Bob";
+            });
+        });
+
+        $('#text').click(function(){
+          $('#text_description').text();
+        })
+      });
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="function">
+        <button id="hide">Click here to hide</button>
+        <button id="show">Click here to show</button>
+
+        <div class="content">
+          <div class="title">Hide/Show</div>
+          <div id="hide_description">Click the buttons to hide and show this text.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="toggle">Click here to toggle</button>
+
+        <div class="content">
+          <div class="title">Toggle</div>
+          <div id="toggle_description">Click the button to toggle this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="slide_up">Click here to slide up</button>
+        <button id="slide_down">Click here to slide down</button>
+
+        <div class="content">
+          <div class="title">slideUp/slideDown</div>
+          <div id="slidedown_description">Click the buttons to slide up or down this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="slide_toggle">Click here to slide toggle</button>
+
+        <div class="content">
+          <div class="title">slideToggle</div>
+          <div id="slidetoggle_description">Click the buttons to slide up or down this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="fade_out">Click here to fade out</button>
+        <button id="fade_in">Click here to fade in</button>
+
+        <div class="content">
+          <div class="title">Fade in/out</div>
+          <div id="fade_description">Click the buttons to slide up or down this text.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="add_class">Click here to add class</button>
+        <button id="remove_class">Click here to remove class</button>
+
+        <div class="content">
+          <div class="title">Add Class</div>
+          <div id="addclass_description">Click the buttons to add class and make this text green.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="before">Click here to add before</button>
+
+        <div class="content">
+          <div class="title">Before</div>
+          <div id="before_description">Click the buttons to add text before.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="after">Click here to add after</button>
+
+        <div class="content">
+          <div class="title">After</div>
+          <div id="after_description">Click the buttons to add text after.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="append_hello">Hello</button>
+        <button id="append_goodbye">Goodbye</button>
+
+        <div class="content">
+          <div class="title">Append</div>
+          <div id="append_description">I would like to say </div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="html">Click here to change the html</button>
+
+        <div class="content">
+          <div class="title">HTML</div>
+          <div id="html_description">Click the button to add some inline html to this.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="attr">Click here to change me</button>
+
+        <div class="content">
+          <div class="title">Attr</div>
+          <div id="attr_description">Click the button to change color.</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="val">Reset Form</button>
+
+        <div class="content">
+          <div class="title">Val</div>
+            <p>
+              Name: <input type="text" name="user" value="Josh">
+            </p>
+
+          <div id="attr_description">Click the button to change the value of the form.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="text">Get text</button>
+
+        <div class="content">
+          <div class="title">Text</div>
+
+          <div id="text_description"><span class="green">Click the button to return the text unformatted.</span></div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

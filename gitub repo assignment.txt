@@ -1,0 +1,9 @@
+mkdir GitHubRepoAssignment
+cd GitHubRepoAssignment
+git init
+touch readme.md
+git log
+git remote add origin https://github.com/jharsono/GitHubRepoAssignment.git
+git push origin master
+git add readme.md
+git commit -m "changed files"

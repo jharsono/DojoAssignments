@@ -1,0 +1,11 @@
+cd desktop
+mkdir gittest
+cd gittest
+git init
+touch index.html
+touch styles.css
+touch aboutMe.txt
+git commit -m “updated aboutme”
+git add aboutMe.txt
+git log
+git revert a62a720f59d168e2ad871ebec440ea55df8765dc “favorite movie now favorite book”

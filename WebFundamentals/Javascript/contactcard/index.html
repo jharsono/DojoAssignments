@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <div id="input-column">
+        <form>
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name" placeholder="First Name">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" cols="50"> </textarea>
+          <input id="submit" type="submit">
+
+        </form>
+      </div>
+
+      <div id="contacts">
+        <div class="card">
+            <h1 class="name">Josh Harsono</h1>
+            <h3 class="cta">Click for description!</h3>
+            <p class ="back">back text!</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

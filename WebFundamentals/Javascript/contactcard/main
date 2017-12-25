@@ -1,0 +1,27 @@
+$(document).ready(function(){
+  alert('it works');
+
+  console.log('before submit');
+
+    $("form").submit(function(){
+      var first = $("#first_name").val();
+      var last = $("#last_name").val();
+      var desc = $("#description").val();
+      console.log('after submit');
+
+      $("#contacts").append(
+        "<div class='card'> <h1 class='name'>"+first+"</h1><h3 class='cta'>"+last+"</h3> <p class ='card back'>"+desc+"</p></div>"
+      );
+      $(this).trigger('reset');
+      return false;
+    });
+
+    $(document).on("click",".card",function(){
+      $(this).children().toggle();
+
+    });
+
+
+
+
+});

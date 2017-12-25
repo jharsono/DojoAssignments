@@ -1,0 +1,188 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+p {
+  font-family: Arial;
+  color: black;
+  padding: 10px;
+}
+a {
+  font-family: Arial;
+color: black;
+}
+
+#wrapper {
+  width: 1000px;
+  background: linear-gradient(#19090D, #715963);
+  margin: auto;
+  padding: 5px;
+  display: block;
+
+}
+
+#header_main {
+  width: auto;
+  background-color: white;
+  padding: 10px;
+
+
+}
+
+#header_left {
+  width: 300px;
+  background-color: white;
+  font-family: "Comic Sans MS", sans-serif;
+  display: inline;
+  vertical-align: center;
+  margin-right: 500px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#header_right {
+  width: 450px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  vertical-align: center;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 0px;
+
+}
+
+
+#headshot {
+  background-color: gray;
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+#mypic {
+  width: 460px;
+  margin: 20px;
+  border: 4px solid gray;
+
+}
+
+#about{
+    background-color: #e3d7e2;
+    width: 440px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding-bottom: 33px;
+
+  }
+
+  #la_mode{
+    width: 310px;
+      height: 555px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: #e3d7e2;
+      margin: 0px 15px 20px 20px;
+  }
+
+#family_contacts{
+  width: 310px;
+    height: 555px;
+    margin: 1px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #e3d7e2;
+    margin: 0px 20px 20px 0px;
+
+}
+
+#fiveEleven {
+  width: 310px;
+  height: 555px;
+  margin: 1px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #e3d7e2;
+
+}
+
+#footer {
+  height: 75px;
+  background-color: white;
+  text-align: center;
+}
+
+
+
+.description {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 12px;
+  color: black;
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 110px;
+}
+
+.title {
+  width: auto;
+  padding: 10px;
+  background: linear-gradient(#b0b0b3, #8A8894, #B0B0B3);
+  vertical-align: top;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+
+}
+.technologies_title {
+  width: auto;
+  padding: 10px;
+  background: linear-gradient(#b0b0b3, #8A8894, #B0B0B3);
+  vertical-align: top;
+  font-family: Arial;
+  color: white;
+
+}
+
+.photo {
+  width: 310px;
+  vertical-align: top;
+}
+
+.button {
+  background-color: #387d63;
+  border: 1px solid;
+  border-color: #1b513d;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 5px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+  box-sizing: content-box;
+}
+
+.icons {
+  margin: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+.social_favicon {
+  height: 20px;
+  width: 20px;
+}

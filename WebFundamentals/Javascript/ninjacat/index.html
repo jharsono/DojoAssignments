@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type ="text/javascript" src= 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // alert('it works');
+
+        $('#zero').click(function(){
+          $(this).attr('src','./img/cat0.png');
+        })
+
+        $('#one').click(function(){
+          $(this).attr('src','./img/cat1.png');
+        })
+
+        $('#two').click(function(){
+          $(this).attr('src','./img/cat2.png');
+        })
+
+        $('#three').click(function(){
+          $(this).attr('src','./img/cat3.png');
+        })
+
+        $('#four').click(function(){
+          $(this).attr('src','./img/cat4.png');
+        })
+
+        $('#restore').click(function(){
+          $('.img').removeAttr('src');
+        })
+
+        $('#restore').click(function(){
+          $('#zero').attr('src','./img/ninja0.png')
+        })
+
+        $('#restore').click(function(){
+          $('#one').attr('src','./img/ninja1.png')
+        })
+
+        $('#restore').click(function(){
+          $('#two').attr('src','./img/ninja2.png')
+        })
+
+        $('#restore').click(function(){
+          $('#three').attr('src','./img/ninja3.png')
+        })
+
+        $('#restore').click(function(){
+          $('#four').attr('src','./img/ninja4.png')
+        })
+
+      });
+
+    </script>
+    <title>ninja cat!</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <img id="zero" class="img" src="./img/ninja0.png" alt="ninja 0">
+      <img id="one" class="img" src="./img/ninja1.png" alt="ninja 1">
+      <img id="two" class="img" src="./img/ninja2.png" alt="ninja 2">
+      <img id="three" class="img" src="./img/ninja3.png" alt="ninja 3">
+      <img id="four" class="img" src="./img/ninja4.png" alt="ninja 4">
+
+      <button id="restore">Transform back</button>
+
+    </div>
+  </body>
+</html>

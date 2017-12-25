@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type ="text/javascript" src= 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert('it works');
+
+        $('.img').click(function(){
+          $(this).css('visibility','hidden');
+        })
+
+        $('#restore').click(function(){
+          $('.img').css('visibility','visible');
+        })
+
+      });
+
+    </script>
+    <title>Disappearing Miso</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="row">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+      </div>
+
+      <div class="row">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+        <img class="img" src="miso.jpg" alt="miso">
+      </div>
+
+      <div class="row">
+        <button id="restore">Restore</button>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>

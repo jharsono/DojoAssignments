@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script type ="text/javascript" src= 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert('it works');
+
+        $('.button.hideshow').click(function(){
+          $('#hideshow > p').hide();
+        })
+
+        $('#hideshow > .button').click(function(){
+          $('#hideshow > p').show();
+        })
+
+        $('#toggle').click(function(){
+          $('#toggle_description').toggle();
+        })
+
+        $('#slide_down').click(function(){
+          $('#slidedown_description').slideDown();
+        })
+
+        $('#slide_up').click(function(){
+          $('#slidedown_description').slideUp();
+        })
+
+        $('#slide_toggle').click(function(){
+          $('#slidetoggle_description').slideToggle();
+        })
+
+      });
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="hide_show">
+        <button class="button">Click here to hide</button>
+        <button class="button">Click here to show</button>
+
+        <div class="content">
+          <div class="title">Hide/Show</div>
+          <p>
+            Click the buttons to hide and show this text.
+          </p>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="toggle">Click here to toggle</button>
+
+        <div class="content">
+          <div class="title">Toggle</div>
+          <div id="toggle_description">Click the button to toggle this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="slide_down">Click here to slide down</button>
+        <button id="slide_up">Click here to slide up</button>
+
+        <div class="content">
+          <div class="title">slideUp/slideDown</div>
+          <div id="slidedown_description">Click the buttons to slide up or down this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="function">
+        <button id="slide_toggle">Click here to slide toggle</button>
+
+        <div class="content">
+          <div class="title">slideToggle</div>
+          <div id="slidetoggle_description">Click the buttons to slide up or down this text.</div>
+        </div>
+      </div>
+      <div class="line"></div>
+
+    </div>
+  </body>
+</html>

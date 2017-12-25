@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#submit {
+  margin: 10px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  }
+
+#input-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#input-column form{
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts {
+
+}
+
+.card {
+  border-style: solid;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.card .back {
+  color: red;
+  display: none;
+}
+
+
+.name {
+  font-size: 30px;
+
+}
+
+.cta {
+  font-size: 20px;
+}

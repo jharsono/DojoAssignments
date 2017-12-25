@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather!</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <form>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter City Here">
+
+        <label for="unit">Fahrenheit</label>
+        <input type="radio" name="unit" value="imperial" checked>
+
+        <label for="unit">Celsius</label>
+        <input type="radio" name="unit" value="metric">
+
+        <input id="submit" type="submit">
+      </form>
+
+      <div id="weather">
+        <h1 class="city"></h1>
+        <h3 class="current-condition"></h3>
+        <div id="temp"></div>
+      </div>
+    </div>
+  </body>
+</html>

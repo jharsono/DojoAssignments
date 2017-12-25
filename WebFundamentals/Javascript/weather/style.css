@@ -1,0 +1,22 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+form {
+  display: flex;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#weather {
+
+}
