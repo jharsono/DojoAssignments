@@ -6,14 +6,9 @@
       }
 
   //click a Pokemon to put it into focus in the Pokedex
-
-
       $(document).on("click","img",function(){
-
-
         var pokeID = $(this).parent().attr('id');
         var urlString = "http://pokeapi.co/api/v2/pokemon/"+pokeID+"/";
-
 
         $.get(urlString,function(data){
           var image = data.sprites.front_default;
@@ -21,7 +16,6 @@
           var height = data.height;
           var weight = data.weight;
           var type = data.types[0].type.name;
-          console.log(type);
 
           $(".name").html("<h1>"+name+"</h1>");
           $("#focus-img").html("<img src='"+image+"'>");
@@ -35,14 +29,4 @@
         }, "json");
       });
 
-      //always on top when scrolling
-//       var $scrollingDiv = $("#poke-info");
-//
-// 		    $(window).scroll(function(){ //listening for the scroll
-// 			       $scrollingDiv
-// 				.stop()
-// 				.animate({"marginTop": ($(window).scrollTop() + 30) + "px"}, "fast" );
-// 	});
-// //
-//
 });

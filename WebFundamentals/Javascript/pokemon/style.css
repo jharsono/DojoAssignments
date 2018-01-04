@@ -34,7 +34,7 @@ body {
   text-align: center;
   margin: 10px;
   border-radius: 7px;
-  position: sticky;
+  position: sticky; /* ensures the info card doesn't scroll  */
   top: 10px;
 }
 
@@ -50,14 +50,4 @@ text-align: center;
   text-align: Left;
   text-transform:capitalize
 
-}
-
-
-.sticky {
-  position: sticky;
-  top: 10px;
-  width: 30%
-
-.sticky + .content {
-  padding-top: 60px;
 }

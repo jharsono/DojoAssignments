@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+.navbtn {
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 10px;
+  color: white;
+  background-color: red;
+  width: 200px;
+  height: 150px;
+  box-sizing: border-box;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .navbtn {
+    background-color: yellow;
+    flex-direction: column;
+    /* flex-basis: 100% */
+  }
+}
+@media only screen and (min-width: 481px) {
+  .navbtn {
+    background-color: blue;
+
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbtn {
+    background-color: red;
+  }
+}

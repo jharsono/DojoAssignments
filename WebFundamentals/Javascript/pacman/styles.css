@@ -1,0 +1,71 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: arial;
+
+}
+
+
+div#points {
+  color: white;
+  display: inline-block;
+}
+div#score {
+  color: white;
+  display: inline-block;
+}
+div.row div {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0px;
+  margin-bottom: -4px;
+}
+
+div.brick {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}
+
+div.coin {
+  background-image: url('./images/coin.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  -webkit-transform: scale(0.2, 0.2);
+}
+
+div#pacman {
+  background: url('./images/pacman.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute
+}
+
+div.empty {
+
+}
+
+div#play-again {
+  visibility: hidden;
+  background-color: white;
+  width: 80px;
+  position: absolute;
+  z-index: 10;
+  top: 83px;
+  left: 53px;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+}
